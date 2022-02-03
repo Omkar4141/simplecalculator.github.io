@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+     h1{
+         background-color: chocolate;
+         text-align: center;
+         
+         border: 2px solid black;
+     }
+     form{
+         background-color: bisque;
+         margin-left: 200px;
+         margin-right: 200px;
+        
+          
+        
+     }
+     .textbox{
+         width: 100px;
+         height: 20px;
+     }
+     
+     
+    h2{
+        margin-left: 80px;
+    }
+    button{
+        color:black;
+        font: bold;
+        background-color: chocolate;
+        margin-left: 80px;
+        padding: 10px 10px 10px 10px;
+    }
+    i{
+        font-size: smaller;
+    }
+ 
+
+    
+
+    </style>
+    <script>
+        
+        function add()
+        {
+            var a=parseInt(document.getElementById("n1").value);
+            var b=parseInt(document.getElementById("n2").value);
+            alert("Addition of " + a + " and " + b + " :"+ "=" + (a+b));
+        }
+        function sub()
+        {
+            var a=parseInt(document.getElementById("n1").value);
+            var b=parseInt(document.getElementById("n2").value);
+            alert("Subtraction of " + a + " and " + b + " :"+ "=" + (a-b));
+        }
+        function mul()
+        {
+            var a=parseInt(document.getElementById("n1").value);
+            var b=parseInt(document.getElementById("n2").value);
+            alert("Multiplication of " + a + " and " + b + " :"+ "=" + (a*b));
+        }
+        function div()
+        {
+            var a=parseInt(document.getElementById("n1").value);
+            var b=parseInt(document.getElementById("n2").value);
+            alert("Division of " + a + " and " + b + " :"+ "=" + (a/b));
+        }
+    </script>
+    <link rel="icon" href="calc.jpg">
+     
+</head>
+<body>
+    
+    <h4 align="center"><b><i>Developed by : &copy;Omkar Lokhande</i></b></h4>
+    <form name="f1">
+    <h1>Simple Calculator (<i>for two no only</i>)</h1><br>
+    <h2>Enter 1<sup>st</sup> No :<input type="number" id="n1" class="textbox">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enter 2<sup>nd</sup> No :<input type="number" id="n2" class="textbox"></h2><br><br><br><br>
+    <button onclick="add()"><b>Addition</b></button><button onclick="sub()"><b>Subtraction</b></button><button onclick="mul()"><b>Multiplication</b></button><button onclick="div()"><b>Division</b></button>
+   
+    </form>
+   
+</body>
+</html>
